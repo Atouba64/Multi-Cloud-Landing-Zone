@@ -1,1 +1,95 @@
 # Tells Git what to ignore
+# .gitignore
+
+# --- Python ---
+
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python Virtual Environments
+# Exclude all venv directories, regardless of name
+.venv/
+venv/
+env/
+ENV/
+pyvenv.cfg
+pip-selfcheck.json
+
+# Environment variables
+# Never commit your environment variables file
+.env
+
+# --- Terraform ---
+
+# Local Terraform directories
+.terraform/
+
+# .tfstate files
+# These files are critical for Terraform's state management but can contain sensitive data.
+# They should never be committed to version control. Use a remote backend for collaboration.
+*.tfstate
+*.tfstate.*.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files to avoid committing sensitive variables
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are meant to be used locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file
+# This file is used to lock dependency versions.
+# While it can be useful for team collaboration to commit this file,
+# it can also cause merge conflicts. For this project, we will ignore it.
+.terraform.lock.hcl
+
+# --- Operating System & Editor ---
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
