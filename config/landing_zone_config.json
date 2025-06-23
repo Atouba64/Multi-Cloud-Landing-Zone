@@ -1,0 +1,34 @@
+{
+    "aws": {
+        "enabled": true,
+        "access_key": "YOUR_AWS_ACCESS_KEY",
+        "secret_key": "YOUR_AWS_SECRET_KEY",
+        "region": "us-east-1",
+        "existing_org": false,
+        "network": {
+            "cidr": "10.0.0.0/16"
+        }
+    },
+    "azure": {
+        "enabled": true,
+        "subscription_id": "YOUR_SUBSCRIPTION_ID",
+        "region": "eastus",
+        "resource_group": "landing-zone-rg",
+        "network": {
+            "cidr": "10.1.0.0/16"
+        }
+    },
+    "security": {
+        "cis_benchmarks": true,
+        "azure": {
+            "subscription_id": "YOUR_SUBSCRIPTION_ID"
+        }
+    },
+    "monitoring": {
+        "prometheus_url": "http://prometheus:9090",
+        "disable_ssl": false,
+        "azure": {
+            "subscription_id": "YOUR_SUBSCRIPTION_ID"
+        }
+    }
+}
