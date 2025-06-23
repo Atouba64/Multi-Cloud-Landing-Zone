@@ -1,1 +1,12 @@
-
+boto3>=1.26.0
+azure-identity>=1.12.0
+azure-mgmt-resource>=22.0.0
+azure-mgmt-network>=21.0.0
+azure-mgmt-security>=3.0.0
+azure-mgmt-monitor>=3.0.0
+pulumi>=3.0.0
+pulumi_aws>=5.0.0
+pulumi_azure>=5.0.0
+prometheus-api-client>=0.5.1
+diagrams>=0.23.0
+terraform-docs>=0.16.0
